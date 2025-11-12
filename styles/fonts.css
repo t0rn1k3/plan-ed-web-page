@@ -7,14 +7,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/* SirinStencil */
-
-@font-face {
-  font-family: "SirinStencil";
-  src: url("/fonts/SirinStencil-Regular.woff2") format("woff2"),
-    url("/fonts/SirinStencil-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
