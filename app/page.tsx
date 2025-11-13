@@ -19,9 +19,23 @@ export default function Home() {
           </h1>
           <TypewriterText />
         </div>
-        <a href="/PlanEd.apk" className="button-download text-3xl py-6 px-12">
-          <span>გ</span>ადმო<span>წ</span>ერა
-        </a>
+        <div className="w-7xl m-auto flex mt-8 justify-between items-end">
+          <a
+            href="/PlanEd.apk"
+            className="button-download text-3xl py-4 px-12 h-20"
+          >
+            <span>გ</span>ადმო<span>წ</span>ერა
+          </a>
+          <div className="lap-img">
+            <Image
+              className="laptop"
+              src="/laptop.png"
+              alt="laptop"
+              width={350}
+              height={200}
+            />
+          </div>
+        </div>
       </main>
     </>
   );
