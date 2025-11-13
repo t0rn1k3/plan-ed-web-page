@@ -23,9 +23,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "ALK Life", sans-serif;
   background-image: url("/background.png");
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -38,10 +37,70 @@ h1 {
   padding: 30px;
   text-align: center;
   border-radius: 50%;
+  transition: 0.3s;
 }
-h1 span {
+h1 .letter {
   color: white;
+  transition: 0.3s;
 }
 .header {
   background-color: #174143;
+}
+h1:hover {
+  background-color: rgba(66, 122, 118, 1);
+  color: white;
+}
+h1:hover .letter {
+  color: #f9b487;
+}
+.underline {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+.underline::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+.typewriter-container {
+  font-family: "ALK Life", sans-serif;
+  direction: "ltr";
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(248, 248, 248, 0),
+    rgba(248, 248, 248, 0) 22px,
+    #92bfda 22px,
+    #92bfda 24px
+  );
+  line-height: 24px;
+  color: #174143;
+  font-weight: bold;
+}
+.button-download {
+  background-color: rgba(66, 122, 118, 1);
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+.button-download:hover {
+  background-color: rgba(66, 122, 118, 0.3);
+  color: #f9b487;
+}
+.button-download span {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "ALK Life", sans-serif;
+  color: #f9b487;
+  transition: 0.3s;
+  font-size: 40px;
+}
+.button-download:hover span {
+  color: white;
 }

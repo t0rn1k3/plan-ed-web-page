@@ -1,3 +1,4 @@
+import TypewriterText from "../components/typewriter";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,11 +10,18 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <div className="w-7xl m-auto mt-15">
+        <div className="w-7xl m-auto mt-15 flex justify-between">
           <h1 className="text-8xl">
-            <span>P</span>lan<span>E</span>d
+            <span className="underline">
+              <span className="letter">P</span>lan
+              <span className="letter">E</span>d
+            </span>
           </h1>
+          <TypewriterText />
         </div>
+        <a href="/PlanEd.apk" className="button-download text-3xl py-6 px-12">
+          <span>გ</span>ადმო<span>წ</span>ერა
+        </a>
       </main>
     </>
   );
